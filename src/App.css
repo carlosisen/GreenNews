@@ -1,0 +1,141 @@
+*{
+ font-family: Helvetica;
+}
+#root{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+width: 1300px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.textup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./assets/hierba2.jpg");
+    background-position: 85%;
+
+}
+/* .headerimg{
+    content: "";
+    position: absolute;
+    background-image: url("\hierba2.jpg");
+    opacity: 0.8;
+    height: 180px;
+    width: 1000px;
+} */
+
+.headerimg2{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+h4{
+    align-items: center;
+    
+}
+.headbuttons{
+    width: 1300px;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: rgba(165, 42, 42, 0.841);
+
+}
+.headcomp{
+    font-weight: bold;
+    height:50px;
+    width: auto;
+    font-size: large;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.headcomp:hover {
+    background-color: rgb(165, 42, 42);
+    text-decoration: underline;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+}
+
+.newsaside{
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    /* border: 1px solid rgba(137, 36, 36, 0.553); */
+
+}
+
+.newsaside:hover{
+    transition: transform 500ms;
+    transform: scale(1.1);
+    cursor:pointer;
+    padding: 5px;
+    background-image: linear-gradient(to right, rgba(15, 115, 15, 0.677), rgba(27, 195, 27, 0.266))
+}
+
+#titleaside{
+    padding: 3px; 
+}
+.titleaside{
+    background-image: linear-gradient(to right,  rgba(69, 180, 38, 0.458), rgba(4, 104, 24, 0.885) );
+}
+
+.bodymain{
+    display:flex;
+    flex-direction: column;
+}
+
+.sectionppal{
+    margin: 10px;
+}
+.sectionppal:hover{
+    background-image: linear-gradient(to right, rgb(15, 115, 15), rgba(27, 195, 27, 0.545));
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sectionppala{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.ppalImgs{
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+#lema{
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:end;
+    height: 100px;
+    padding: 25px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgba(66, 116, 66, 0.666), rgb(0, 146, 0));
+
+}
