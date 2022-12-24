@@ -18,7 +18,7 @@ a{
 
 .main{
     width: 90%;
-    min-width: 300px;
+    min-width: 100px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,6 @@ a{
     .main{
         width: auto;
     }
-
 }
 
 .textup{
@@ -116,7 +115,8 @@ h4{
 .newsaside p,h5, img{
     margin:10px; 
 }
-
+@media screen and (min-width: 700px ){
+    
 .newsaside:hover{
     transition: transform 500ms;
     transform: scale(1.1);
@@ -125,9 +125,17 @@ h4{
     background-image: linear-gradient(to right, rgba(15, 115, 15, 0.677), rgba(27, 195, 27, 0.266))
 }
 
+.sectionppal:hover{
+    background-image: linear-gradient(to right, rgb(15, 115, 15), rgba(27, 195, 27, 0.545));
+    border-radius: 10px;
+    cursor: pointer;
+}
+}
+
 #titleaside{
     padding: 3px; 
 }
+
 .titleaside{
     background-image: linear-gradient(to right,  rgba(69, 180, 38, 0.458), rgba(4, 104, 24, 0.885) );
 }
@@ -136,18 +144,11 @@ h4{
     margin: 10px;
     
 }
-.sectionppal:hover{
-    background-image: linear-gradient(to right, rgb(15, 115, 15), rgba(27, 195, 27, 0.545));
-    border-radius: 10px;
-    cursor: pointer;
-}
 
 .sectionppala{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-
 }
 
 .newsaside__texts{
@@ -158,7 +159,7 @@ h4{
 
 .ppalImgs{
     flex: 30%;
-    max-width: 30%;
+    max-width: 300px;
     height: auto;
     flex-shrink: 2;
     margin: 10px;
@@ -206,5 +207,6 @@ h4{
 
 .textnews{
     flex: 60%;
-    min-width: 250px;
+    min-width: 100px;
+    max-width: 100%;
 }
