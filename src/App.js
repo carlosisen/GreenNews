@@ -45,6 +45,7 @@ function newPpal(titulo) {
 
 
   return (
+    <div className='all'>
     <div className="main">
       <div>
       <Header sections={sections} onclick={(a)=>newPpal(a)}/>
@@ -62,6 +63,7 @@ function newPpal(titulo) {
         
       </div>
       <Footer/>
+    </div>
     </div>
   );
 }

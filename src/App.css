@@ -10,11 +10,25 @@ a{
     color: black;
 }
 
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main{
-width: 1300px;
-display:flex;
-flex-direction: column;
-justify-content: center;
+    width: 90%;
+    min-width: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+    .main{
+        width: auto;
+    }
+
 }
 
 .textup{
@@ -47,12 +61,14 @@ h4{
     
 }
 .headbuttons{
-    width: 1300px;
+    width: 100%;
     display: flex;
     flex-direction: row ;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 50px;
+    min-height: 50px;
+    max-height: 100px;
+    overflow: auto;
     background-color: rgba(165, 42, 42, 0.841);
 
 }
@@ -73,14 +89,32 @@ h4{
 .body{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.aside{
+    flex: 10%;
+    flex-shrink: 1;
+}
+.bodymain{
+    flex: 70%;
+    display:flex;
+    flex-shrink: 2;
+    flex-direction: column;
 }
 
 .newsaside{
-    width: 250px;
+    display: flex;
+    flex: 200px;
+    flex-wrap: wrap;
     padding: 15px;
     border-radius: 5px;
+    align-items: center;
+    justify-content:start;
     /* border: 1px solid rgba(137, 36, 36, 0.553); */
-
+}
+.newsaside p,h5, img{
+    margin:10px; 
 }
 
 .newsaside:hover{
@@ -98,13 +132,9 @@ h4{
     background-image: linear-gradient(to right,  rgba(69, 180, 38, 0.458), rgba(4, 104, 24, 0.885) );
 }
 
-.bodymain{
-    display:flex;
-    flex-direction: column;
-}
-
 .sectionppal{
     margin: 10px;
+    
 }
 .sectionppal:hover{
     background-image: linear-gradient(to right, rgb(15, 115, 15), rgba(27, 195, 27, 0.545));
@@ -115,13 +145,25 @@ h4{
 .sectionppala{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+.newsaside__texts{
+    flex: 50%;
+    flex-shrink: 1;
 }
 
 
 .ppalImgs{
+    flex: 30%;
+    max-width: 30%;
+    height: auto;
+    flex-shrink: 2;
     margin: 10px;
     border-radius: 10px;
-
+    object-fit:cover
 }
 
 #lema{
@@ -131,10 +173,10 @@ h4{
 
 .foot{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content:end;
-    height: 100px;
+    justify-content: space-between;
+    height: fit-content;
     padding: 25px;
     border-radius: 5px;
     background-image: linear-gradient(to right, rgba(66, 116, 66, 0.666), rgb(0, 146, 0));
@@ -160,5 +202,9 @@ h4{
     border-radius: 5px;
     border-bottom: 6px solid rgba(0, 0, 0, 0.699);
     background-image: linear-gradient(to right, rgba(4, 104, 24, 0.604), rgba(69, 180, 38, 0.458));
+}
 
+.textnews{
+    flex: 60%;
+    min-width: 250px;
 }
